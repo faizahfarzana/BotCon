@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="25dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Paired Devices" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:text="Disconnect" />
+
+        <!--<ListView-->
+            <!--android:id="@+id/listView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/disconnect"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:textColor="#ffffff" />-->
+
+        <ImageButton
+            android:id="@+id/imageButton_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbar_speed"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:rotation="270"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton_forward"
+            android:layout_toLeftOf="@+id/imageButton_forward"
+            android:background="@android:color/transparent"
+            android:rotation="180"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton_left"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:rotation="-270"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton_forward"
+            android:layout_toRightOf="@+id/imageButton_forward"
+            android:background="@android:color/transparent"
+            android:rotation="0"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton_forward"
+            android:layout_toLeftOf="@+id/imageButton_left"
+            android:background="@android:color/transparent"
+            android:rotation="0"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton_forward"
+            android:layout_toRightOf="@+id/imageButton_right"
+            android:background="@android:color/transparent"
+            android:rotation="0"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_horn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:rotation="270"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageButton_horn"
+            android:background="@android:color/transparent"
+            android:rotation="-270"
+            android:src="@drawable/right" />
+
+
+        <SeekBar
+            android:id="@+id/seekbar_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton_horn"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:max="5"
+            android:progress="2"
+            android:progressBackgroundTint="#ffffff"
+            android:progressTint="#ff8c1a"
+            android:text="speed"
+            android:thumb="@drawable/thumb"
+            android:thumbTint="#ff8c1a"
+            android:thumbTintMode="add"
+            android:tickMark="@drawable/tick" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
